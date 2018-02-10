@@ -6,17 +6,17 @@ $(document).ready(function(){
 
     function htmlBuilder(data){
         var htmlStr = "<h1>" + data["name"] + "</h1>";
-        htmlStr += "<img src='https://pokeapi.co/media/img/" + data["pkdx_id"] + ".png'>";
+        htmlStr += "<img src='https://pokeapi.co/media/img/" + data["id"] + ".png'>";
 
         htmlStr += "<h2>Types</h2>";
         for(var i = 0; i <data.types.length; i++){
         htmlStr += "<li>" + data.types[i].type.name + "</li>";
         }
         htmlStr += "<h2>Height</h2>";
-        htmlStr += "<li>" +data["height"] + "</li>";
+        htmlStr += "<li>" +data["height"] + ' ft' + "</li>";
 
         htmlStr += "<h2>Weight</h2>";
-        htmlStr += "<li>" +data["weight"] + "</li>";
+        htmlStr += "<li>" +data["weight"] + ' lb' + "</li>";
 
         $('#pokeDex').html(htmlStr);
     }
