@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#container{
+    display: inline-block;
+    vertical-align: top;
+    width:800px;
+    height: 1100px;
+    border:solid 1px black;
+    overflow: scroll;
+}
+#pokeDex{
+    display: inline-block;
+    vertical-align: top;
+    width:300px;
+    height: 600px;
+    border: solid 20px red;
+}
